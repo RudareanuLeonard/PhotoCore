@@ -10,17 +10,15 @@
 
 #include "../Screen/Screen.h"
 
-#include "../MainScreen/MainScreen.h"
-
-class WelcomeScreen : public Screen{
+class MainScreen : public Screen{
 
     public:
     // std::QString title;
     QString title;
     int width, height;
 
-    WelcomeScreen(QString title="PhotoCore", int width = 800, int height = 600) : Screen(width, height), title(title), width(width), height(height){
+    MainScreen(QString title="Main Screen", int width = 1000, int height = 1000) : Screen(width, height), title(title), width(width), height(height){
     }
 
-    QWidget* createWelcomeScreen();
+    QWidget* createMainScreen();
 };

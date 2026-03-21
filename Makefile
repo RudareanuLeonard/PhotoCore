@@ -4,13 +4,13 @@
 CXX = g++
 
 # Source files
-SOURCES = WelcomeScreen.cpp
+SOURCES = src/main.cpp src/ui/WelcomeScreen/WelcomeScreen.cpp src/ui/MainScreen/MainScreen.cpp
 
 # Output executable
-TARGET = WelcomeScreen
+TARGET = main
 
 # Include directories
-INCLUDES = -I./src
+INCLUDES = -I./src -I./src/ui/WelcomeScreen -I./src/ui/MainScreen -I./src/ui/Screen
 
 # Qt flags using pkg-config
 QTFLAGS = $(shell pkg-config --cflags --libs Qt6Widgets)

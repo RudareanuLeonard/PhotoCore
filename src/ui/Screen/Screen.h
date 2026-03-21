@@ -1,6 +1,8 @@
 #include <QApplication>
 #include <QLabel>
 
+#pragma once
+
 class Screen{
     public:
     int width;
