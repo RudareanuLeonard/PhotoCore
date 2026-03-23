@@ -5,6 +5,8 @@
 #include <cstring>
 #include <iostream>
 #include <QObject>
+#include <QFileDialog>
+#include <QPixmap>
 
 #pragma once
 
